@@ -1,4 +1,30 @@
 # Invertons as a source of programmed variability in the bacterial immunity systems
+
+## Repository structure
+```
+📂 Invertons/
+├── 📂 code/
+│   ├── 📂 notebooks/
+│   │   ├── 🔬 Domain visualization.ipynb    # Protein domain visualization
+│   │   └── 📊 Labjournal - general pipeline.ipynb  # Main analysis and graphs
+│   │
+│   └── 📂 environments/    # Environment files
+│       ├── ⚙️ *.yml  # Conda environments for command-line tools
+│       └── ⚙️ *.txt  # Pip-dependencies for Python and R scripts
+│
+├── 📂 data/                # All the data
+│   ├── 📂 experimental data/
+│   │   ├── 🧬 genes/       # .dna-files (gene sequences before and after inversion)
+│   │   ├── 🧩 clusters.tsv          # Protein clustering results
+│   │   ├── 🏷️ domains_genome_coords.tsv  # Domain coordinates
+│   │   └── 🔀 invs_systems_intersected.tsv  # Invertons and associated genes
+│   │
+│   └── 📂 initial data/    # Inverton annotation
+│
+└── 📂 images/
+    └── 🖼️ Domain structure and protein structure.pdf  # Finalized images
+```
+
 ## General information
 
 ### Aim and objectives
@@ -33,27 +59,5 @@ Our findings suggest that invertons occur stochastically in RM systems, primaril
 ### Data
 Data used was composed of full genome sequences assembled from long reads and available though NCBI. Inverton annotation for the genomes was obtained from [Chanin et. al, 2024](https://doi.org/10.1038/s41586-024-07970-4) - table can be found in ```./data/initial_data```. Python script for data aquisition can be found in ```./code/notebooks/Labjournal - general pipeline.ipynb``` in *Data selection and extraction* section.
     
-## Repository structure
-```
-📂 Invertons/
-├── 📂 code/
-│   ├── 📂 notebooks/
-│   │   ├── 🔬 Domain visualization.ipynb    # Protein domain visualization
-│   │   └── 📊 Labjournal - general pipeline.ipynb  # Main analysis and graphs
-│   │
-│   └── 📂 environments/    # Environment files
-│       ├── ⚙️ *.yml  # Conda environments for command-line tools
-│       └── ⚙️ *.txt  # Pip-dependencies for Python and R scripts
-│
-├── 📂 data/                # All the data
-│   ├── 📂 experimental data/
-│   │   ├── 🧬 genes/       # .dna-files (gene sequences before and after inversion)
-│   │   ├── 🧩 clusters.tsv          # Protein clustering results
-│   │   ├── 🏷️ domains_genome_coords.tsv  # Domain coordinates
-│   │   └── 🔀 invs_systems_intersected.tsv  # Invertons and associated genes
-│   │
-│   └── 📂 initial data/    # Inverton annotation
-│
-└── 📂 images/
-    └── 🖼️ Domain structure and protein structure.pdf  # Finalized images
-```
+### Technical requirements
+All work described was done with installed 48 GB memory and 466 GB external hard drive for genome data storage. Central processor used - Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz. OS used - Windows 10 version 22H2. Command line tools used from WSL with Ubuntu 22.04.3 LTS.
