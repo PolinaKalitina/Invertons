@@ -1,0 +1,18 @@
+name: deffinder_env
+channels:
+  - padlocbio
+  - conda-forge
+  - bioconda
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - hmmer=3.4=h503566f_3
+  - libgcc=14.2.0=h77fa898_1
+  - libgomp=14.2.0=h77fa898_1
+  - libstdcxx=14.2.0=hc0a3c3a_1
+  - micromamba=2.0.7=0
+  - seqkit=2.10.0=h9ee0642_0
+prefix: /root/miniconda3/envs/deffinder_env
