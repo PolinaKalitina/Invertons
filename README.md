@@ -59,5 +59,17 @@ Our findings suggest that invertons occur stochastically in RM systems, primaril
 ### Data
 Data used was composed of full genome sequences assembled from long reads and available though NCBI. Inverton annotation for the genomes was obtained from [Chanin et. al, 2024](https://doi.org/10.1038/s41586-024-07970-4) - table can be found in ```./data/initial_data```. Python script for data aquisition can be found in ```./code/notebooks/Labjournal - general pipeline.ipynb``` in *Data selection and extraction* section.
     
-### Technical requirements
-All work described was done with installed 48 GB memory and 466 GB external hard drive for genome data storage. Central processor used - Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz. OS used - Windows 10 version 22H2. Command line tools used from WSL with Ubuntu 22.04.3 LTS.
+### System Requirements
+
+#### Hardware
+- **Memory**: 48 GB RAM (recommended for large genome datasets)
+- **Storage**: 500 GB available space (external SSD/NVMe recommended)
+- **Processor**: Intel Core i7-1065G7 or equivalent (4+ cores)
+
+#### Software
+- **OS**: Windows 10/11 with WSL2 (Ubuntu 22.04 LTS)
+- **Core tools**:
+  - Conda (for environment management)
+  - DefenseFinder 2.0.0 + PADLOC 2.0.0 (defense system annotation)
+  - BEDTools 2.30.0 (genomic coordinate operations)
+- **Visualization**: R/gggenes + Python/Matplotlib
