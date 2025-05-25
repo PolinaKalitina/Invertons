@@ -52,9 +52,9 @@ Our findings suggest that invertons occur stochastically in RM systems, primaril
 - Clustering of other invertable proteins within defense islands was uninformative;
 - Two integrases, associated with invertable defense genes in bacteria genomes were found;
 - Inversions occurred only within RM I and RM II systems involving S-subunit genes (66.7%), RM II Type G proteins (14.3%), restrictases (14.3%) and methylases (4.7%);
-- There types of inversion events of DNA inversions within defense-related genes were identified: loss of function for 52.6%, change in specificity for 31.6%, no apparent changes for 15.8%. 
+- There types of inversion events of DNA inversions within defense-related genes were identified: loss of function for 28.6%, change in specificity for 42.9%, no apparent changes for 23.8%.  
 
-**Conclusion:** inversion events within genes of defense systems are likely random and mainly lead to loss of protein function.  
+**Conclusion:** the vast majority of immune systems in the genomes of bacteria capable of DNA inversion are not subject to phase variations. DNA inversions associated with immune genes are more often within RM systems and lead to a change in specificity.  
 
 ### Data
 Data used was composed of full genome sequences assembled from long reads and available though NCBI. Inverton annotation for the genomes was obtained from [Chanin et. al, 2024](https://doi.org/10.1038/s41586-024-07970-4) - table can be found in ```./data/initial_data```. Python script for data aquisition can be found in ```./code/notebooks/Labjournal - general pipeline.ipynb``` in *Data selection and extraction* section.
